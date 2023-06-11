@@ -11,7 +11,9 @@ return {
   },
   -- change some options
   opts = {
+
     defaults = {
+      initial_mode = "normal",
       layout_strategy = "horizontal",
       layout_config = { prompt_position = "top" },
       sorting_strategy = "ascending",
