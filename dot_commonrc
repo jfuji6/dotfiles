@@ -1,0 +1,8 @@
+alias ls='ls --color=auto'
+alias ll='ls -lav --ignore=..' # show long listing of all except ".."
+alias l='ls -lav --ignore=.?*' # show long listing but no hidden dotfiles except "."
+alias fcheckout='git branch | awk '\''{$1=$1; print}'\'' | fzf --height=80% --layout=reverse --info=inline --border --margin=1 --padding=1 --preview '\''echo "Branch: {}"; echo "Latest Commit: $(git log --oneline -n 1 {})"'\'' | awk '\''{print $NF}'\'' | xargs git checkout'
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
