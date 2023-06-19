@@ -30,8 +30,6 @@ ShowInstallerIsoInfo() {
 	fi
 }
 
-source .aliasrc
-
 [[ "$(whoami)" = "root" ]] && return
 
 [[ -z "$FUNCNEST" ]] && export FUNCNEST=100 # limits recursive functions, see 'man bash'
