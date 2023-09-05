@@ -1,9 +1,0 @@
-font:
-  normal:
-   family: Jet Brains Mono Nerd Font 
-  size: 11
-window: 
-  dimensions:
-   columns: 120
-   lines: 40
-  opacity: .99
