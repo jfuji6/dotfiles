@@ -82,6 +82,7 @@ _open_files_for_editing() {
 eval "$(starship init bash)"
 
 export PICO_SDK_PATH=/home/jfujitani/repos/pico/pico-sdk
+export EDITOR="nvim"
 
 alias ls='ls --color=auto'
 alias ll='ls -lav --ignore=..' # show long listing of all except ".."
