@@ -79,7 +79,13 @@ _open_files_for_editing() {
 # alias ef='_open_files_for_editing'     # 'ef' opens given file(s) for editing
 # alias pacdiff=eos-pacdiff
 ################################################################################
-source ~/.commonrc
 eval "$(starship init bash)"
+
 export PICO_SDK_PATH=/home/jfujitani/repos/pico/pico-sdk
 
+alias ls='ls --color=auto'
+alias ll='ls -lav --ignore=..' # show long listing of all except ".."
+alias l='ls -lav --ignore=.?*' # show long listing but no hidden dotfiles except "."
+alias fcheckout='git branch | awk '\''{$1=$1; print}'\'' | fzf --height=80% --layout=reverse --info=inline --border --margin=1 --padding=1 --preview '\''echo "Branch: {}"; echo "Latest Commit: $(git log --oneline -n 1 {})"'\'' | awk '\''{print $NF}'\'' | xargs git checkout'
+
+source /usr/share/nvm/init-nvm.sh
