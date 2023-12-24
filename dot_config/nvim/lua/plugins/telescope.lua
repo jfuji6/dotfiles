@@ -9,6 +9,13 @@ return {
         end,
         desc = "Find Plugin File",
       },
+      {
+        "<leader>fg",
+        function()
+          require("telescope.builtin").live_grep({})
+        end,
+        desc = "Find In Files",
+      },
     },
     opts = {
       defaults = {
