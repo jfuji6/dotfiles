@@ -5,6 +5,9 @@ keybinds {
         // bind "Alt c" { Copy; }
         unbind "Ctrl h" // unbind move
         unbind "Ctrl o" // unbind session
+        unbind "Ctrl n" // unbind resize
+        unbind "Ctrl s" // unbind search
+        unbind "Ctrl q" // unbind quit
     }
     locked {
         bind "Ctrl g" { SwitchToMode "Normal"; }
