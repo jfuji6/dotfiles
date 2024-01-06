@@ -1,3 +1,4 @@
 return {
-  { "echansnovski/mini.pairs", enabled = false },
+  { "echasnovski/mini.surround", enabled = false },
+  { "echasnovski/mini.pairs", enabled = false },
 }
