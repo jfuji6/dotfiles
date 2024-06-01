@@ -69,7 +69,7 @@ Unknown = ""
 Windows = ""
 
 [directory]
-style = "fg:#e3e5e5 bg:#769ff0"
+style = "fg:#ffffff bg:#424244"
 format = "[ $path ]($style)"
 truncation_length = 6
 truncation_symbol = "…/"
